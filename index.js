@@ -6,8 +6,6 @@ import {
   updateById,
 } from "./contacts.js";
 
-// console.log('process', (process.argv.slice(2)).join(''));
-// let a = (process.argv.slice(2));
 
 
 async function invokeAction({ action, id, name, email, phone }) {
@@ -58,4 +56,4 @@ async function invokeAction({ action, id, name, email, phone }) {
     }
   }
 
-  invokeAction(process.argv)
+  invokeAction();

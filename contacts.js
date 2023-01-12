@@ -5,6 +5,8 @@ const fsPromise = fs.promises;
 const baseUrl = new URL("db/contacts.json", import.meta.url).pathname;
 const contactsPath = baseUrl.slice(1);
 
+//console.log(contactsPath) //.. ==> C:/Users/dima/Desktop/node-hw1-ecmaScript/db/contacts.json 
+
 
 const updateContacts = async data => {
   try {
